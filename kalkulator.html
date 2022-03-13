@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        body{
+            background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+            background-size: cover;
+        }
+        fieldset{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 200px;
+            height: 300px;
+            margin-top: 13%;
+            margin-left: 40%;
+            background-color: rgb(140, 233, 240);
+        }
+        h3{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .angka{
+            width: 100px;
+            margin-left: 10px;
+        }
+        #hasil{
+            width: 100px;
+            margin-left: 25px;
+        }
+        #tambah{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+        #kurang{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+        #bagi{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+        #kali{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+        #clear{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+        #modulus{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <center>
+        <h3>Kalkulator</h3>
+            Angka1<input class="angka" type="number" id="angka1" />
+            <br><br>
+            Angka2<input class="angka" type="number" id="angka2" />
+            <br><br>
+            
+            <input type="button" id="tambah" value="+"/>
+            <input type="button" id="kurang" value="-"/>
+            <input type="button" id="bagi" value="/"/>
+            <br><br>
+            <input type="button" id="kali" value="x"/>
+            <input type="button" id="modulus" value="%"/>
+            <input type="button" id="clear" value="C"/>
+            <br><br>
+
+            Hasil<input type="text" id="hasil" disabled>
+        </center>
+    </fieldset>
+    <script src="kalkulator.js"></script>
+</body>
+</html>
